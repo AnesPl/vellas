@@ -1,68 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>VELLAS</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
+<div class="cursor-glow"></div>
 
 <!-- HERO -->
 <section class="hero">
-<video autoplay muted loop playsinline>
-<source src="videos/hero.mp4" type="video/mp4">
-</video>
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-<h1>VELLAS</h1>
-<p>Sound. Emotion. Energy.</p>
-<button class="btn">Listen</button>
-</div>
-</section>
-
-<!-- MUSIC -->
-<section class="music">
-<h2>Latest Release</h2>
-
-<div class="video">
-<iframe src="https://www.youtube.com/embed/YJRPOzJ3bfE" allowfullscreen></iframe>
-</div>
-</section>
-
-<!-- GALLERY -->
-<section class="gallery">
-<img src="images/band1.jpg">
-<img src="images/band2.jpg">
-<img src="images/band3.jpg">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/vellas-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h1 class="hero-title">VELLAS</h1>
+        <p class="hero-subtitle">Raw. Dark. Cinematic.</p>
+        <div class="hero-buttons">
+            <button class="btn-primary">Listen Now</button>
+            <button class="btn-secondary">Merch</button>
+        </div>
+        <div class="scroll-indicator">⌄</div>
+    </div>
 </section>
 
 <!-- ABOUT -->
 <section class="about">
+<div class="about-container">
+<img src="images/band.png" alt="VELLAS Band">
+<div class="about-text">
+<h2>About</h2>
 <p>
-VELLAS is a modern band blending emotion, atmosphere and raw energy into a unique sound.
+VELLAS is a black-and-white experimental music collective.  
+Blending ambient textures, cinematic beats, and haunting vocals,  
+their sound takes you on a journey through shadow and light.
 </p>
+</div>
+</div>
 </section>
 
-<!-- SOCIALS -->
-<section class="socials">
-<a href="#">Spotify</a>
-<a href="#">YouTube</a>
-<a href="#">Instagram</a>
+<!-- MUSIC -->
+<section class="beats">
+<h2>Latest Tracks</h2>
+<div class="beat-grid">
+<div class="beat-card">
+<h3>Shadow Waves</h3>
+<audio controls>
+<source src="audio/shadow-waves.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="beat-card">
+<h3>Monochrome Dreams</h3>
+<audio controls>
+<source src="audio/monochrome-dreams.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="beat-card">
+<h3>Nightfall</h3>
+<audio controls>
+<source src="audio/nightfall.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
 </section>
 
-<!-- LINK BACK -->
-<section class="zeyd-link">
-<p>Produced by</p>
-<a href="https://zeydwav.netlify.app">ZeydWav</a>
+<!-- VIDEOS -->
+<section class="hits">
+<h2>Live / Official Videos</h2>
+<div class="video-grid">
+<div class="video-card">
+<iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+</div>
+<div class="video-card">
+<iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" allowfullscreen></iframe>
+</div>
+</div>
 </section>
 
+<!-- TOUR -->
+<section class="tour">
+<h2>Upcoming Shows</h2>
+<ul class="tour-list">
+<li>📍 Berlin – 25 Mar 2026</li>
+<li>📍 London – 30 Mar 2026</li>
+<li>📍 Paris – 5 Apr 2026</li>
+</ul>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Contact</h2>
+<div class="contact-card">
+<p>Book shows or collaborations:</p>
+<a href="mailto:vellas.contact@gmail.com" class="contact-email">vellas.contact@gmail.com</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© VELLAS</p>
+<div class="social-links">
+<a href="#" target="_blank">Instagram</a>
+<a href="#" target="_blank">YouTube</a>
+<a href="#" target="_blank">Spotify</a>
+</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
